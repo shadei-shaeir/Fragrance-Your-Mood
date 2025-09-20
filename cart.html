@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>فاتورة الطلب - Fragrance Your Mood</title>
+  <link rel="stylesheet" href="style/main.css">
+  <style>
+    .cart-container {
+      max-width:700px;
+      margin:30px auto;
+      background:#111;
+      padding:20px;
+      border-radius:8px;
+      border:1px solid #333;
+    }
+    .cart-item {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px;
+      border-bottom:1px solid #333;
+    }
+    .cart-item h4 {margin:0; color:#d4af37;}
+    .cart-item span {color:#ccc;}
+    .cart-item button {
+      background:red;
+      border:none;
+      color:#fff;
+      padding:5px 10px;
+      border-radius:4px;
+      cursor:pointer;
+    }
+    .cart-total {
+      text-align:right;
+      margin-top:15px;
+      font-size:16px;
+      color:#fff;
+    }
+    .cart-actions {
+      margin-top:20px;
+      display:flex;
+      gap:10px;
+    }
+    .cart-actions button {
+      flex:1;
+      padding:10px;
+      border:none;
+      border-radius:6px;
+      background:#d4af37;
+      color:#111;
+      font-weight:bold;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>🧾 فاتورة الطلب</h1>
+  </header>
+
+  <main>
+    <div class="cart-container">
+      <div id="cart-items"></div>
+      <div class="cart-total">الإجمالي: <span id="cart-total">0</span> SAR</div>
+      <div class="cart-actions">
+        <button id="clear-cart">إفراغ السلة</button>
+        <button id="send-whatsapp">إرسال عبر واتساب</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/cart.js"></script>
+</body>
+</html>
