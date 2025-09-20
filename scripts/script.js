@@ -91,3 +91,6 @@ function submitContact(event) {
   event.preventDefault();
   alert("تم إرسال رسالتك بنجاح! سنرد عليك قريبًا.");
     }
+function toggleHeart(el) {
+  el.textContent = el.textContent === "❤️" ? "🤍" : "❤️";
+  }
