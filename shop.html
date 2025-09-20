@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>العطور حسب المزاج</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script src="scripts/header.js"></script>
+
+  <section class="shop-intro">
+    <h2>اختر عطرك حسب حالتك النفسية</h2>
+    <p>كل خلطة تعكس شعورًا داخليًا، وتُصمم لتكون امتدادًا لك.</p>
+  </section>
+
+  <section class="perfume-list">
+    <div class="perfume-card calm">
+      <h3>هدوء داخلي – Inner Calm</h3>
+      <p>مزيج من اللافندر والمسك الأبيض، يبعث على الطمأنينة والسكينة.</p>
+      <div class="actions">
+        <button onclick="editScent()">تعديل الرائحة</button>
+        <button onclick="suggestNames('الضمير')">اقتراح اسم</button>
+        <button onclick="orderWhatsApp()">طلب عبر واتساب</button>
+      </div>
+    </div>
+
+    <div class="perfume-card energy">
+      <h3>طاقة متدفقة – Citrus Rush</h3>
+      <p>حمضيات منعشة مع لمسة من النعناع، تعزز النشاط والحيوية.</p>
+      <div class="actions">
+        <button onclick="editScent()">تعديل الرائحة</button>
+        <button onclick="suggestNames('الانبساط')">اقتراح اسم</button>
+        <button onclick="orderWhatsApp()">طلب عبر واتساب</button>
+      </div>
+    </div>
+
+    <div class="perfume-card love">
+      <h3>رومانسية ناعمة – Velvet Bloom</h3>
+      <p>ورد دمشقي ومسك ناعم، يعبّر عن دفء المشاعر والحنين.</p>
+      <div class="actions">
+        <button onclick="editScent()">تعديل الرائحة</button>
+        <button onclick="suggestNames('التوافق')">اقتراح اسم</button>
+        <button onclick="orderWhatsApp()">طلب عبر واتساب</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Fragrance Your Mood © جميع الحقوق محفوظة.  
+    <br>
+    تم الإنشاء بواسطة <strong>shadei-shaeir</strong>  
+    <br>
+    يُمنع النسخ أو التصوير أو إعادة الاستخدام بدون إذن رسمي.  
+    <br>
+    للتواصل: <a href="mailto:shadei.m79@gmail.com">shadei.m79@gmail.com</a>  
+    <br>
+    واتساب: <a href="https://wa.me/966573052266">+966573052266</a>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
