@@ -4,10 +4,97 @@
   <meta charset="UTF-8">
   <title>المتجر - Fragrance Your Mood</title>
   <link rel="stylesheet" href="style/main.css">
+  <style>
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background:#111;
+      border:1px solid #333;
+      border-radius:8px;
+      padding:12px;
+      text-align:center;
+      color:#eee;
+    }
+    .product-card img {
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:6px;
+      margin-bottom:8px;
+    }
+    .product-card h3 {margin:6px 0; color:#d4af37;}
+    .product-card span {color:#9a9a9a; font-size:14px;}
+  </style>
 </head>
 <body>
   <header class="site-header"><h1>🛍️ المتجر</h1></header>
-  <main class="container" id="shop-container"></main>
+  <main class="container">
+    <div class="shop-grid">
+      <div class="product-card">
+        <img src="assets/perfume1.jpg" alt="Perfume 1">
+        <h3>Golden Oud</h3>
+        <p>مزيج فاخر من العود والعنبر</p>
+        <span>350 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume2.jpg" alt="Perfume 2">
+        <h3>Fresh Citrus</h3>
+        <p>انتعاش البرغموت والليمون</p>
+        <span>280 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume3.jpg" alt="Perfume 3">
+        <h3>Calm Lavender</h3>
+        <p>راحة اللافندر والمسك</p>
+        <span>300 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume4.jpg" alt="Perfume 4">
+        <h3>Confident Leather</h3>
+        <p>قوة الجلد وخشب الأرز</p>
+        <span>400 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume5.jpg" alt="Perfume 5">
+        <h3>Rose Delight</h3>
+        <p>رقة الورد ولمسة فانيلا</p>
+        <span>320 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume6.jpg" alt="Perfume 6">
+        <h3>Amber Night</h3>
+        <p>دفء العنبر والمسك</p>
+        <span>360 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume7.jpg" alt="Perfume 7">
+        <h3>Ocean Breeze</h3>
+        <p>انتعاش البحر والحمضيات</p>
+        <span>290 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume8.jpg" alt="Perfume 8">
+        <h3>Vanilla Dream</h3>
+        <p>حلاوة الفانيلا ولمسة مسك</p>
+        <span>310 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume9.jpg" alt="Perfume 9">
+        <h3>Woody Spice</h3>
+        <p>خشب الصندل والتوابل</p>
+        <span>370 SAR</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/perfume10.jpg" alt="Perfume 10">
+        <h3>Jasmine Bloom</h3>
+        <p>عبير الياسمين المنعش</p>
+        <span>330 SAR</span>
+      </div>
+    </div>
+  </main>
   <footer class="site-footer">
     <p>© <span id="year"></span> Fragrance Your Mood. جميع الحقوق محفوظة.</p>
     <nav class="footer-links">
@@ -18,17 +105,3 @@
   <script src="scripts/app.js"></script>
 </body>
 </html>
-<header class="site-header">
-  <div class="logo-area">
-    <img src="assets/logo.svg" alt="Fragrance Your Mood" class="logo">
-    <div class="brand-text">
-      <h1>FRAGRANCE YOUR MOOD</h1>
-      <p>Perfume That Feels You</p>
-      <p class="brand-ar">عطر يعكس مزاجك</p>
-    </div>
-  </div>
-  <div class="header-actions">
-    <button id="menu-btn" class="menu-btn">☰</button>
-    <button id="lang-btn" class="lang-btn">🌐</button>
-  </div>
-</header>
