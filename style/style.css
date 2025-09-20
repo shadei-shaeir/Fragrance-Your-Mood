@@ -1,0 +1,106 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.buttons button,
+.actions button,
+.language-switch button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover,
+.actions button:hover,
+.language-switch button:hover {
+  background-color: #eee;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 50px;
+  line-height: 1.6;
+}
+
+.opening-message {
+  background-color: #fef9f5;
+  border-right: 5px solid #ffccbc;
+  padding: 20px;
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.perfume-card {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.perfume-card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.perfume-card.calm {
+  background-color: #e0f7fa;
+}
+
+.perfume-card.energy {
+  background-color: #fff3e0;
+}
+
+.perfume-card.love {
+  background-color: #fce4ec;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  border-right: 5px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.review-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
