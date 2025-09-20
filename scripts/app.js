@@ -1,4 +1,3 @@
-
 // القائمة الجانبية
 const menuBtn = document.getElementById('menu-btn');
 const sideMenu = document.getElementById('side-menu');
@@ -72,4 +71,4 @@ if(orderBtn){
     const msg = document.getElementById('analysis-result').innerText;
     window.open(`https://wa.me/966573052266?text=${encodeURIComponent(msg)}`);
   });
-        }
+}
