@@ -143,3 +143,30 @@ button:hover, .btn:hover {background:#333; color:#d4af37;}
   margin:0 5px;
 }
 .site-footer a:hover { text-decoration:underline; }
+.intro {
+  text-align:center;
+  margin:30px auto;
+  max-width:700px;
+  line-height:1.8;
+}
+.intro h2 {
+  color:#d4af37;
+  font-size:22px;
+  margin-bottom:15px;
+}
+.intro p {
+  font-size:16px;
+  color:#ddd;
+}
+.header-actions {
+  display:flex;
+  gap:10px;
+}
+.lang-btn {
+  background:none;
+  border:1px solid #d4af37;
+  border-radius:4px;
+  padding:5px 10px;
+  color:#d4af37;
+  cursor:pointer;
+  }
