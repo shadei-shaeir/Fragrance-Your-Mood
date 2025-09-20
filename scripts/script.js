@@ -94,3 +94,8 @@ function submitContact(event) {
 function toggleHeart(el) {
   el.textContent = el.textContent === "❤️" ? "🤍" : "❤️";
   }
+function removeItem(button) {
+  const item = button.closest(".cart-item");
+  item.remove();
+  alert("تم حذف العطر من السلة.");
+}
