@@ -74,3 +74,22 @@ if(shopContainer){
       });
     });
 }
+const analyzeBtn = document.getElementById('analyze-btn');
+if(analyzeBtn){
+  analyzeBtn.addEventListener('click', ()=>{
+    const mood = document.getElementById('mood-input').value.toLowerCase();
+    let blend = "";
+    if(mood.includes("ثقة") || mood.includes("confidence")){
+      blend = "Oud 40% + Leather 30% + Amber 30%";
+    } else if(mood.includes("راحة") || mood.includes("calm")){
+      blend = "Lavender 35% + Musk 25% + Vanilla 20% + Sandalwood 20%";
+    } else if(mood.includes("فرح") || mood.includes("happy")){
+      blend = "Bergamot 35% + Jasmine 25% + Musk 20% + Citrus 20%";
+    } else if(mood.includes("تركيز") || mood.includes("focus")){
+      blend = "Cedarwood 30% + Vetiver 30% + Musk 20% + Amber 20%";
+    } else {
+      blend = "Musk 30% + Vanilla 25% + Amber 25% + Cedar 20%";
+    }
+    document.getElementById('analysis-result').innerText = "المزيج المقترح: " + blend;
+  });
+}
