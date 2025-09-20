@@ -237,3 +237,30 @@ footer {
 .cart-actions button:hover {
   transform: scale(1.05);
 }
+header {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-weight: bold;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ff9800;
+}
+
+.language-switch {
+  margin-top: 10px;
+}
