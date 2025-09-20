@@ -99,3 +99,31 @@ function removeItem(button) {
   item.remove();
   alert("تم حذف العطر من السلة.");
 }
+function switchLanguage(lang) {
+  localStorage.setItem("siteLanguage", lang);
+  applyLanguage(lang);
+}
+function applyLanguage(lang) {
+  fetch(`lang/${lang}.json`)
+    .then(res => res.json())
+    .then(data => {
+      document.title = data.title;
+      document.querySelector(".tagline")?.textContent = data.tagline;
+      document.querySelector("label[for='mood']")?.textContent = data.enterMood;
+      document.querySelectorAll(".buttons button")[0].textContent = data.analyze;
+      document.querySelectorAll(".buttons button")[1].textContent = data.edit;
+      document.querySelectorAll(".buttons button")[2].textContent = data.order;
+      document.querySelectorAll(".buttons button")[3].textContent = data.share;
+      document.querySelector("footer")?.innerHTML = `
+        ${data.title} © ${data.footerRights}<br>
+        ${data.footerCreator}<br>
+        ${data.footerWarning}<br>
+        ${data.email}: <a href="mailto:shadei.m79@gmail.com">shadei.m79@gmail.com</a><br>
+        ${data.whatsapp}: <a href="https://wa.me/966573052266">+966573052266</a>
+      `;
+    });
+        }
+document.addEventListener("DOMContentLoaded", () => {
+  const lang = localStorage.getItem("siteLanguage") || "ar";
+  applyLanguage(lang);
+});
