@@ -205,3 +205,35 @@ footer {
   transform: translateY(20px);
   animation: fadeIn 1.2s ease forwards;
   }
+.cart-item {
+  background-color: #fffaf0;
+  border-left: 5px solid #ffccbc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cart-actions button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cart-actions button:hover {
+  transform: scale(1.05);
+}
