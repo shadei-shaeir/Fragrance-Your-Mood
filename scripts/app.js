@@ -49,7 +49,18 @@ if(analyzeBtn){
     document.getElementById('analysis-result').innerText = "المزيج المقترح: " + blend;
   });
 }
-
+// زر "طلب عبر واتساب" يتحول إلى "أضف للسلة"
+const orderBtn = document.getElementById('order-btn');
+if(orderBtn){
+  orderBtn.addEventListener('click', ()=>{
+    const msg = document.getElementById('analysis-result').innerText;
+    if(!msg){ alert("حلل المزاج أولاً"); return; }
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({name: msg, price: 300}); // سعر افتراضي للتحليل
+    localStorage.setItem("cart", JSON.stringify(cart));
+    window.location.href = "cart.html";
+  });
+}
 // مشاركة
 const shareBtn = document.getElementById('share-btn');
 if(shareBtn){
