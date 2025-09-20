@@ -72,3 +72,53 @@ if(orderBtn){
     window.open(`https://wa.me/966573052266?text=${encodeURIComponent(msg)}`);
   });
 }
+function loadCart(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const container = document.getElementById("cart-items");
+  const totalEl = document.getElementById("cart-total");
+  container.innerHTML = "";
+  let total = 0;
+
+  cart.forEach((item, index)=>{
+    total += item.price;
+    const div = document.createElement("div");
+    div.className = "cart-item";
+    div.innerHTML = `
+      <div>
+        <h4>${item.name}</h4>
+        <span>${item.price} SAR</span>
+      </div>
+      <button onclick="removeItem(${index})">حذف</button>
+    `;
+    container.appendChild(div);
+  });
+
+  totalEl.textContent = total;
+}
+
+function removeItem(index){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index,1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  loadCart();
+}
+
+document.getElementById("clear-cart").addEventListener("click", ()=>{
+  localStorage.removeItem("cart");
+  loadCart();
+});
+
+document.getElementById("send-whatsapp").addEventListener("click", ()=>{
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  if(cart.length === 0){ alert("السلة فارغة"); return; }
+  let msg = "طلب جديد:\n";
+  let total = 0;
+  cart.forEach(item=>{
+    msg += `- ${item.name}: ${item.price} SAR\n`;
+    total += item.price;
+  });
+  msg += `\nالإجمالي: ${total} SAR`;
+  window.open(`https://wa.me/966573052266?text=${encodeURIComponent(msg)}`);
+});
+
+loadCart();
