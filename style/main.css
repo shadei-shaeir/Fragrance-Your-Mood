@@ -52,12 +52,75 @@ body {
 .side-menu.hidden {display:none;}
 
 /* Intro */
-.intro {text-align:center; margin:30px auto; max-width:700px; line-height:1.8;}
+.intro {
+  text-align:center;
+  margin:30px auto;
+  max-width:700px;
+  line-height:1.8;
+}
 .intro h2 {color:#d4af37; margin-bottom:15px;}
 .intro p {font-size:15px; color:#ddd;}
 
 /* Mood Box */
+.mood-box {
+  margin:30px auto;
+  max-width:600px;
+  padding:20px;
+  background:#111;
+  border-radius:8px;
+  border:1px solid #333;
+}
 .mood-box textarea {
   width:100%;
   min-height:80px;
-  border-radius:
+  border-radius:8px;
+  border:1px solid #333;
+  background:#0b0b0b;
+  color:#eee;
+  padding:10px;
+  font-size:14px;
+  resize:vertical;
+}
+.btn-row {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:15px;
+}
+.btn-row button {
+  flex:1;
+  min-width:120px;
+  padding:10px;
+  border:none;
+  border-radius:6px;
+  background:#d4af37;
+  color:#111;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+.btn-row button:hover {background:#b8962e;}
+.result {
+  margin-top:15px;
+  padding:10px;
+  background:#222;
+  border-radius:6px;
+  font-size:14px;
+  color:#d4af37;
+}
+
+/* Footer */
+.site-footer {
+  text-align:center;
+  padding:15px;
+  background:#111;
+  color:#aaa;
+  font-size:13px;
+  margin-top:40px;
+}
+.footer-links a {
+  color:#d4af37;
+  text-decoration:none;
+  margin:0 5px;
+}
+.footer-links a:hover {text-decoration:underline;}
