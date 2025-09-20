@@ -87,3 +87,7 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+function submitContact(event) {
+  event.preventDefault();
+  alert("تم إرسال رسالتك بنجاح! سنرد عليك قريبًا.");
+    }
