@@ -10,10 +10,10 @@
       margin: 0;
       font-family: 'Arial', sans-serif;
       background-color: #000;
-      color: #d4af37; /* ذهبي */
+      color: #d4af37;
     }
 
-    /* splash */
+    /* الافتتاحية */
     .splash {
       background: url('assets/icons/splash-image.jpeg') no-repeat center center;
       background-size: cover;
@@ -41,7 +41,7 @@
       color: #ffd700;
     }
 
-    /* main content hidden initially */
+    /* المحتوى الرئيسي */
     .main-content {
       display: none;
       background-color: #000;
@@ -89,7 +89,29 @@
     }
 
     .nav-bar a:hover {
-      color: #ff0000; /* أحمر */
+      color: #ff0000;
+    }
+
+    .analysis-box {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .analysis-button {
+      margin-top: 20px;
+      padding: 12px 28px;
+      font-size: 18px;
+      color: #d4af37;
+      background-color: #000;
+      border: 2px solid silver;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .analysis-button:hover {
+      background-color: #1a1a1a;
+      color: #ff0000;
     }
 
     footer {
@@ -115,18 +137,18 @@
     }
 
     .footer-links a:hover {
-      color: silver; /* فضي */
+      color: silver;
     }
   </style>
 </head>
 <body>
 
-  <!-- ✅ splash section -->
+  <!-- ✅ الافتتاحية -->
   <section class="splash" id="splash">
     <a href="#" class="start-button" onclick="document.getElementById('splash').style.display='none';document.querySelector('.main-content').style.display='block';">Let the journey begin!</a>
   </section>
 
-  <!-- ✅ main content -->
+  <!-- ✅ الصفحة الرئيسية -->
   <div class="main-content">
     <header class="header">
       <img src="assets/images/logo.jpg" alt="Logo" />
@@ -141,6 +163,12 @@
       <a href="pages/reviews.html">Reviews</a>
       <a href="pages/profile.html">My Page</a>
     </nav>
+
+    <section class="analysis-box">
+      <h2>Start your emotional analysis</h2>
+      <p>We use your choices to understand your mood—nothing is saved without your permission.</p>
+      <a href="pages/mood.html" class="analysis-button">Begin Analysis</a>
+    </section>
 
     <footer>
       <p>© 2025 Fragrance Your Mood. All rights reserved.</p>
