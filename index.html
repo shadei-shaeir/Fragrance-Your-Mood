@@ -13,20 +13,18 @@
       color: #d4af37;
     }
 
-    /* ✅ Splash Section */
     .splash {
       background: url('assets/icons/splash-image.jpeg') no-repeat center center;
       background-size: cover;
-      height: calc(100vh - 10px); /* تصغير 1 سم تقريبي */
+      height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
-      text-align: center;
+      flex-direction: column;
     }
 
     .start-button {
-      margin-top: 20px;
+      margin-bottom: 60px;
       padding: 12px 28px;
       font-size: 18px;
       color: #d4af37;
@@ -42,7 +40,6 @@
       color: #ffd700;
     }
 
-    /* ✅ Main Content */
     .main-content {
       display: none;
       background-color: #000;
@@ -67,17 +64,16 @@
       text-align: left;
     }
 
-    .project-name {
-      font-size: 28px;
-      font-weight: bold;
-      color: #d4af37;
+    .header-text h1 {
+      font-size: 24px;
       margin: 0;
+      color: #d4af37;
     }
 
-    .project-tagline {
-      font-size: 16px;
+    .header-text p {
+      font-size: 14px;
+      margin: 5px 0 0;
       color: #ccc;
-      margin-top: 8px;
     }
 
     .nav-bar {
@@ -152,18 +148,16 @@
 
   <!-- ✅ Splash Section -->
   <section class="splash" id="splash">
-    <h1 class="project-name">Fragrance Your Mood</h1>
-    <p class="project-tagline">Perfume that reflects your mood</p>
-    <a href="#" class="start-button" onclick="document.getElementById('splash').style.display='none';document.querySelector('.main-content').style.display='block';">Let the journey begin!</a>
+    <a href="#home" class="start-button" onclick="showMain()">Let the journey begin!</a>
   </section>
 
   <!-- ✅ Main Content -->
-  <div class="main-content">
+  <div class="main-content" id="main">
     <header class="header">
       <img src="assets/images/logo.jpg" alt="Logo" />
       <div class="header-text">
-        <h1 class="project-name">Fragrance Your Mood</h1>
-        <p class="project-tagline">Perfume that reflects your mood</p>
+        <h1>Fragrance Your Mood</h1>
+        <p>Perfume that reflects your mood</p>
       </div>
     </header>
 
@@ -190,6 +184,21 @@
       </div>
     </footer>
   </div>
+
+  <!-- ✅ سكربت بسيط لحل مشكلة التحديث -->
+  <script>
+    function showMain() {
+      document.getElementById('splash').style.display = 'none';
+      document.getElementById('main').style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('load', () => {
+      if (window.location.hash === '#home') {
+        showMain();
+      }
+    });
+  </script>
 
 </body>
 </html>
