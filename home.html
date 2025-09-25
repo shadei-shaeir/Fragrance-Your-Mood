@@ -1,55 +1,121 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>الصفحة الرئيسية</title>
+  <title>Fragrance Your Mood</title>
   <link rel="stylesheet" href="core/main.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    /* الترويسة */
+    .header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .project-name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #a88c4a;
+      margin: 0;
+    }
+
+    .project-tagline {
+      font-size: 16px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    /* الأقسام */
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 16px;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-bar a:hover {
+      color: #a88c4a;
+    }
+
+    /* التذييل */
+    footer {
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      border-top: 1px solid #ccc;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #666;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #a88c4a;
+    }
+  </style>
 </head>
 <body>
 
   <!-- ✅ الترويسة -->
-  <header class="main-header">
-    <nav>
-      <ul class="nav-list">
-        <li><a href="pages/profile.html">صفحتي</a></li>
-        <li><a href="pages/mood.html">مزاجي</a></li>
-        <li><a href="pages/suggestions.html">اقتراحات</a></li>
-        <li><a href="pages/cartView.html">السلة</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <img src="assets/images/logo.jpg" alt="Project Logo" />
+    <h1 class="project-name">Fragrance Your Mood</h1>
+    <p class="project-tagline">Perfume that reflects your mood</p>
   </header>
 
-  <!-- ✅ الأقسام الرئيسية -->
-  <main class="main-content">
-    <section class="section-box">
-      <h2>عن المشروع</h2>
-      <p>عطر يعكس حالتك النفسية، ويمنحك تجربة شخصية لا تُنسى.</p>
-    </section>
-
-    <section class="section-box">
-      <h2>مزايا العطر</h2>
-      <p>اقتراحات واعية، بدون إضافات تلقائية، وكل شيء تحت سيطرتك.</p>
-    </section>
-
-    <section class="section-box">
-      <h2>التحكم الشخصي</h2>
-      <p>تحليل، مراجعة، وسلة—all بإذن المستخدم فقط.</p>
-    </section>
-
-    <!-- ✅ مربع التحليل -->
-    <section class="analysis-box">
-      <h2>ابدأ رحلتك النفسية</h2>
-      <p>نستخدم اختياراتك لفهم حالتك النفسية بدقة.</p>
-      <a href="pages/mood.html" class="start-button">ابدأ التحليل</a>
-    </section>
-  </main>
+  <!-- ✅ الأقسام -->
+  <nav class="nav-bar">
+    <a href="home.html">Home</a>
+    <a href="pages/store.html">Store</a>
+    <a href="pages/cartView.html">Cart</a>
+    <a href="pages/reviews.html">Reviews</a>
+    <a href="pages/profile.html">My Page</a>
+  </nav>
 
   <!-- ✅ التذييل -->
-  <footer class="main-footer">
-    <p>© 2025 مشروع شهاب العاطفي. جميع الحقوق محفوظة.</p>
-    <p>الخصوصية أولويتنا. لا يتم أي إجراء بدون إذنك.</p>
-    <p>للتواصل: 966573052266 | shadei.m79@gmail.com</p>
+  <footer>
+    <p>© 2025 Fragrance Your Mood. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="pages/story.html">Our Story</a>
+      <a href="pages/privacy.html">Privacy</a>
+      <a href="mailto:shadei.m79@gmail.com">Contact</a>
+    </div>
   </footer>
 
 </body>
