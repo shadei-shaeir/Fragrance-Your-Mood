@@ -3,55 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>رحلتك تبدأ من هنا</title>
+  <title>الافتتاحية</title>
   <link rel="stylesheet" href="core/main.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('assets/icons/splash-image.jpeg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .start-button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #a88c4a;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-button:hover {
+      background-color: #c9a85e;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ✅ الترويسة -->
-  <header class="main-header">
-    <nav>
-      <ul class="nav-list">
-        <li><a href="pages/profile.html">صفحتي</a></li>
-        <li><a href="pages/mood.html">مزاجي</a></li>
-        <li><a href="pages/suggestions.html">اقتراحات</a></li>
-        <li><a href="pages/cartView.html">السلة</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ✅ صورة البداية -->
-  <section class="splash-section">
-    <img src="assets/icons/splash-image.jpeg" alt="صورة البداية" class="splash-image" />
-    <h1 class="intro-title">مرحبًا بك في عالمك العاطفي</h1>
-    <p class="intro-text">هنا تبدأ رحلتك نحو عطر يعكسك.</p>
-    <a href="pages/mood.html" class="start-button">ابدأ التحليل</a>
-  </section>
-
-  <!-- ✅ الأقسام الرئيسية -->
-  <main class="main-content">
-    <section class="section-box">
-      <h2>تحليل نفسي مخصص</h2>
-      <p>نستخدم اختياراتك لفهم حالتك النفسية بدقة، بدون حفظ تلقائي.</p>
-    </section>
-
-    <section class="section-box">
-      <h2>اقتراحات عطرية واعية</h2>
-      <p>نقترح فقط بناءً على حالتك، وأنت من يقرر الإضافة للسلة.</p>
-    </section>
-
-    <section class="section-box">
-      <h2>تحكم كامل بالمراجعات</h2>
-      <p>مراجعتك لا تُنشر إلا بإذنك، وكل شيء تحت سيطرتك.</p>
-    </section>
-  </main>
-
-  <!-- ✅ الذيل -->
-  <footer class="main-footer">
-    <p>© 2025 مشروع شهاب العاطفي. جميع الحقوق محفوظة.</p>
-    <p>الخصوصية أولويتنا. لا يتم أي إجراء بدون إذنك.</p>
-    <p>للتواصل: 966573052266 | shadei.m79@gmail.com</p>
-  </footer>
+  <a href="home.html" class="start-button">Let the journey begin!</a>
 
 </body>
-</html> 
+</html>
