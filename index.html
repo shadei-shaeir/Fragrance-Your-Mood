@@ -1,46 +1,156 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>الافتتاحية</title>
+  <title>Fragrance Your Mood</title>
   <link rel="stylesheet" href="core/main.css" />
   <style>
     body {
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #d4af37; /* ذهبي */
+    }
+
+    /* splash */
+    .splash {
       background: url('assets/icons/splash-image.jpeg') no-repeat center center;
       background-size: cover;
       height: 100vh;
       display: flex;
+      justify-content: center;
+      align-items: flex-end;
       flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      font-family: 'Arial', sans-serif;
     }
 
     .start-button {
       margin-bottom: 40px;
       padding: 12px 28px;
       font-size: 18px;
-      color: #d4af37; /* ذهبي */
-      background-color: #000; /* أسود */
-      border: 2px solid #d4af37; /* إطار ذهبي */
+      color: #d4af37;
+      background-color: #000;
+      border: 2px solid #d4af37;
       border-radius: 6px;
       cursor: pointer;
       text-decoration: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .start-button:hover {
       background-color: #1a1a1a;
       color: #ffd700;
     }
+
+    /* main content hidden initially */
+    .main-content {
+      display: none;
+      background-color: #000;
+      color: #d4af37;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      border-bottom: 1px solid #999;
+    }
+
+    .header img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .project-name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d4af37;
+      margin: 0;
+    }
+
+    .project-tagline {
+      font-size: 16px;
+      color: #ccc;
+      margin-top: 8px;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 16px;
+      background-color: #111;
+      border-bottom: 1px solid #999;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    .nav-bar a:hover {
+      color: #ff0000; /* أحمر */
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      border-top: 1px solid #999;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #ccc;
+    }
+
+    .footer-links a:hover {
+      color: silver; /* فضي */
+    }
   </style>
 </head>
 <body>
 
-  <a href="home.html" class="start-button">Let the journey begin!</a>
+  <!-- ✅ splash section -->
+  <section class="splash" id="splash">
+    <a href="#" class="start-button" onclick="document.getElementById('splash').style.display='none';document.querySelector('.main-content').style.display='block';">Let the journey begin!</a>
+  </section>
+
+  <!-- ✅ main content -->
+  <div class="main-content">
+    <header class="header">
+      <img src="assets/images/logo.jpg" alt="Logo" />
+      <h1 class="project-name">Fragrance Your Mood</h1>
+      <p class="project-tagline">Perfume that reflects your mood</p>
+    </header>
+
+    <nav class="nav-bar">
+      <a href="#">Home</a>
+      <a href="pages/store.html">Store</a>
+      <a href="pages/cartView.html">Cart</a>
+      <a href="pages/reviews.html">Reviews</a>
+      <a href="pages/profile.html">My Page</a>
+    </nav>
+
+    <footer>
+      <p>© 2025 Fragrance Your Mood. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="pages/story.html">Our Story</a>
+        <a href="pages/privacy.html">Privacy</a>
+        <a href="mailto:shadei.m79@gmail.com">Contact</a>
+      </div>
+    </footer>
+  </div>
 
 </body>
 </html>
