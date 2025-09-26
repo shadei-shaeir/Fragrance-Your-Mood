@@ -17,7 +17,7 @@ body {
 }
 
 .splash-content {
-  margin-bottom: 80px; /* مرفوع 2 سم تقريبًا */
+  margin-bottom: 80px; /* مرفوع 2 سم */
 }
 
 .start-button {
@@ -62,7 +62,7 @@ body {
   width: 80px;
   height: auto;
   margin-left: 20px;
-  margin-right: 5px; /* ✅ الشعار على بعد 0.5 سم من اليمين */
+  margin-right: 5px; /* ✅ الشعار على بعد 0.5 سم من الطرف */
 }
 
 .header-text {
@@ -159,4 +159,4 @@ footer {
 
 .footer-links a:hover {
   color: silver;
-}
+  }
