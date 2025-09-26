@@ -54,6 +54,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 30px 0 0 0;
+  margin-bottom: 0;
+  height: auto;
+  overflow: hidden;
+  background-color: #000;
   border-bottom: 1px solid #999;
 }
 
@@ -94,12 +98,14 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 0 16px 16px 16px; /* بدون هامش علوي */
-  margin-top: 0;              /* الأقسام ملاصقة للترويسة تمامًا */
+  padding: 0 16px 16px 16px;
+  margin-top: 0;
   background-color: #111;
   border-bottom: 1px solid #999;
+  border-top: none;
 }
 
+/* ✅ Navigation Links */
 .nav-bar a {
   text-decoration: none;
   color: #d4af37;
