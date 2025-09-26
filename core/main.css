@@ -8,7 +8,7 @@ body {
 /* ✅ Splash Section */
 .splash {
   background: url('../assets/icons/splash-image.jpeg') no-repeat center center;
-  background-size: 90%; /* تصغير بنسبة 10٪ فقط */
+  background-size: 100%; /* تصغير بنسبة 10٪ فقط */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .splash-content {
-  margin-bottom: 80px; /* مرفوع 2 سم */
+  margin-bottom: 80px; /* مرفوع 4 سم */
 }
 
 .start-button {
