@@ -8,7 +8,7 @@ body {
 /* ✅ Splash Section */
 .splash {
   background: url('../../assets/icons/splash-image.jpeg') no-repeat center center;
-  background-size: 90%;
+  background-size: 110%; /* تم تكبير الصورة بنسبة 20٪ */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .splash-content {
-  margin-bottom: 80px;
+  margin-bottom: 120px; /* تم رفع الزر بمقدار 2 سم */
 }
 
 .start-button {
@@ -60,8 +60,8 @@ body {
 .header img {
   width: 80px;
   height: auto;
-  margin-left: 20px;
-  margin-right: 5px;
+  margin-left: 10px;   /* تقريبه للطرف */
+  margin-right: 5px;   /* لا يتجاوز نصف سم */
 }
 
 .header-text {
@@ -73,9 +73,9 @@ body {
 .header-text h1,
 .header-text p {
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal; /* يسمح بالكلام على سطرين */
+  overflow: visible;
+  text-overflow: unset;
 }
 
 .header-text h1 {
@@ -94,7 +94,7 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 16px;
-  margin-top: 10px;
+  margin-top: 24px; /* تم رفع الأقسام لتكون ملاصقة للترويسة */
   background-color: #111;
   border-bottom: 1px solid #999;
 }
