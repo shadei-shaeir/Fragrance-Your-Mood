@@ -43,8 +43,9 @@ body {
 
 .splash-text p {
   font-size: 14px;
-  margin: 0;
+  margin: 8px 0 0 0;
   color: #ccc;
+  line-height: 1.6;
 }
 
 .start-button {
@@ -169,4 +170,4 @@ footer {
 
 .footer-links a:hover {
   color: silver;
-  }
+}
