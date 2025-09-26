@@ -1,4 +1,3 @@
-/* ✅ إعداد عام */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -9,24 +8,29 @@ body {
 /* ✅ Splash Section */
 .splash {
   background: url('../assets/icons/splash-image.jpeg') no-repeat center center;
-  background-size: cover;
+  background-size: 90%; /* تصغير الصورة بنسبة 10٪ */
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   position: relative;
 }
 
+.splash-content {
+  margin-bottom: 60px;
+}
+
 .start-button {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 12px 28px;
+  display: inline-block;
+  padding: 14px 32px;
   font-size: 18px;
   color: #d4af37;
   background-color: #000;
   border: 2px solid #d4af37;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .start-button:hover {
@@ -50,7 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 30px 20px;
+  padding: 30px 20px 10px;
   border-bottom: 1px solid #999;
 }
 
@@ -63,6 +67,12 @@ body {
 .header-text {
   text-align: left;
   max-width: 60%;
+  overflow: hidden;
+}
+
+.header-text h1,
+.header-text p {
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -70,13 +80,11 @@ body {
 
 .header-text h1 {
   font-size: 24px;
-  margin: 0;
   color: #d4af37;
 }
 
 .header-text p {
   font-size: 14px;
-  margin: 5px 0 0;
   color: #ccc;
 }
 
@@ -104,6 +112,7 @@ body {
 .analysis-box {
   text-align: center;
   padding: 40px 20px;
+  margin-top: 20px;
 }
 
 .analysis-button {
