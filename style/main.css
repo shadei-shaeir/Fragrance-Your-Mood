@@ -1,9 +1,8 @@
-/* ✅ إعداد عام */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #000;
-  color: #d4af37; /* ذهبي */
+  color: #d4af37;
 }
 
 /* ✅ Splash Section */
@@ -11,15 +10,14 @@ body {
   background: url('../assets/icons/splash-image.jpeg') no-repeat center center;
   background-size: cover;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
+  position: relative;
 }
 
-/* ✅ زر الدخول */
 .start-button {
-  margin-bottom: 40px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 12px 28px;
   font-size: 18px;
   color: #d4af37;
@@ -28,7 +26,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .start-button:hover {
@@ -36,40 +33,54 @@ body {
   color: #ffd700;
 }
 
-/* ✅ المحتوى الرئيسي */
+/* ✅ Main Content */
 .main-content {
   display: none;
   background-color: #000;
   color: #d4af37;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* ✅ الترويسة */
 .header {
-  text-align: center;
-  padding: 40px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 20px;
   border-bottom: 1px solid #999;
 }
 
 .header img {
   width: 80px;
   height: auto;
-  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
-.project-name {
-  font-size: 28px;
-  font-weight: bold;
-  color: #d4af37;
+.header-text {
+  text-align: left;
+  max-width: 60%;
+}
+
+.header-text h1 {
+  font-size: 24px;
   margin: 0;
+  color: #d4af37;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.project-tagline {
-  font-size: 16px;
+.header-text p {
+  font-size: 14px;
+  margin: 5px 0 0;
   color: #ccc;
-  margin-top: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* ✅ الأقسام */
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -86,10 +97,9 @@ body {
 }
 
 .nav-bar a:hover {
-  color: #ff0000; /* أحمر */
+  color: #ff0000;
 }
 
-/* ✅ مربع التحليل */
 .analysis-box {
   text-align: center;
   padding: 40px 20px;
@@ -105,7 +115,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .analysis-button:hover {
@@ -113,7 +122,6 @@ body {
   color: #ff0000;
 }
 
-/* ✅ التذييل */
 footer {
   background-color: #111;
   padding: 20px;
