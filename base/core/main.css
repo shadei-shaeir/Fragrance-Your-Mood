@@ -8,9 +8,9 @@ body {
 
 /* ✅ الافتتاحية */
 .splash {
+  height: 80vh;
   background: url('../../assets/icons/splash-image.jpeg') no-repeat center center;
   background-size: cover;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -44,11 +44,9 @@ body {
   background-color: #000;
   color: #d4af37;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+  scroll-margin-top: 0;
 }
 
 /* ✅ الترويسة */
