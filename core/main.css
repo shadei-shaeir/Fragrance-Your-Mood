@@ -8,7 +8,7 @@ body {
 /* ✅ Splash Section */
 .splash {
   background: url('../assets/icons/splash-image.jpeg') no-repeat center center;
-  background-size: 90%; /* تصغير الصورة بنسبة 10٪ */
+  background-size: 90%; /* تصغير بنسبة 10٪ فقط */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .splash-content {
-  margin-bottom: 60px;
+  margin-bottom: 80px; /* مرفوع 2 سم تقريبًا */
 }
 
 .start-button {
@@ -62,11 +62,12 @@ body {
   width: 80px;
   height: auto;
   margin-left: 20px;
+  margin-right: 5px; /* ✅ الشعار على بعد 0.5 سم من اليمين */
 }
 
 .header-text {
   text-align: left;
-  max-width: 60%;
+  flex-grow: 1;
   overflow: hidden;
 }
 
@@ -94,6 +95,7 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 16px;
+  margin-top: 10px; /* ✅ مرفوعة 1 سم عن الترويسة */
   background-color: #111;
   border-bottom: 1px solid #999;
 }
@@ -112,7 +114,7 @@ body {
 .analysis-box {
   text-align: center;
   padding: 40px 20px;
-  margin-top: 20px;
+  margin-top: 10px; /* ✅ مرفوعة 1 سم عن الأقسام */
 }
 
 .analysis-button {
