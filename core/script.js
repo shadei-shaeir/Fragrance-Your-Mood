@@ -7,5 +7,7 @@ function showMain() {
 window.addEventListener('load', () => {
   if (window.location.hash === '#home') {
     showMain();
+  } else {
+    document.getElementById('main').style.display = 'none';
   }
 });
