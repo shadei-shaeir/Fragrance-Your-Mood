@@ -53,12 +53,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 30px 0 0 0;
+  padding: 30px 16px 0 16px; /* هامش جانبي متوازن */
   margin-bottom: 0;
   height: auto;
   overflow: hidden;
   background-color: #000;
   border-bottom: 1px solid #999;
+  gap: 12px; /* تباعد مضبوط بين الشعار والكلام */
 }
 
 .header img {
@@ -68,9 +69,11 @@ body {
 }
 
 .header-text {
-  text-align: left;
   flex-grow: 1;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-text h1,
