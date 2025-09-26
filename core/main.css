@@ -63,22 +63,22 @@ body {
   max-width: 60%;
 }
 
-.header-text h1 {
-  font-size: 24px;
+.header-text h1,
+.header-text p {
   margin: 0;
-  color: #d4af37;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.header-text h1 {
+  font-size: 24px;
+  color: #d4af37;
+}
+
 .header-text p {
   font-size: 14px;
-  margin: 5px 0 0;
   color: #ccc;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .nav-bar {
