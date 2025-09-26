@@ -1,3 +1,4 @@
+/* ✅ إعدادات عامة */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -5,40 +6,7 @@ body {
   color: #d4af37;
 }
 
-/* ✅ Splash Section */
-.splash {
-  background: url('../../assets/icons/splash-image.jpeg') no-repeat center center;
-  background-size: 110%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-}
-
-.splash-content {
-  margin-bottom: 120px;
-}
-
-.start-button {
-  display: inline-block;
-  padding: 14px 32px;
-  font-size: 18px;
-  color: #d4af37;
-  background-color: #000;
-  border: 2px solid #d4af37;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.start-button:hover {
-  background-color: #1a1a1a;
-  color: #ffd700;
-}
-
-/* ✅ Main Content */
+/* ✅ خلفية الصفحة الرئيسية */
 .main-content {
   background-color: #000;
   color: #d4af37;
@@ -46,34 +14,38 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-/* ✅ Header */
+/* ✅ الترويسة */
 .header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 30px 16px 0 16px; /* هامش جانبي متوازن */
-  margin-bottom: 0;
-  height: auto;
-  overflow: hidden;
+  padding: 24px 16px 0 16px;
+  margin: 0;
   background-color: #000;
   border-bottom: 1px solid #999;
-  gap: 12px; /* تباعد مضبوط بين الشعار والكلام */
+  gap: 12px;
+  height: auto;
+  overflow: hidden;
 }
 
+/* ✅ الشعار */
 .header img {
   width: 80px;
   height: auto;
   margin: 0;
 }
 
+/* ✅ النص بجانب الشعار */
 .header-text {
   flex-grow: 1;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .header-text h1,
@@ -96,19 +68,18 @@ body {
   color: #ccc;
 }
 
-/* ✅ Navigation */
+/* ✅ الأقسام */
 .nav-bar {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 0 16px 16px 16px;
-  margin-top: 0;
+  margin: 0;
   background-color: #111;
-  border-bottom: 1px solid #999;
   border-top: none;
+  border-bottom: 1px solid #999;
 }
 
-/* ✅ Navigation Links */
 .nav-bar a {
   text-decoration: none;
   color: #d4af37;
@@ -119,7 +90,7 @@ body {
   color: #ff0000;
 }
 
-/* ✅ Analysis Section */
+/* ✅ قسم التحليل */
 .analysis-box {
   text-align: center;
   padding: 40px 20px;
@@ -143,7 +114,7 @@ body {
   color: #ff0000;
 }
 
-/* ✅ Footer */
+/* ✅ التذييل */
 footer {
   background-color: #111;
   padding: 20px;
@@ -168,4 +139,4 @@ footer {
 
 .footer-links a:hover {
   color: silver;
-}
+  }
